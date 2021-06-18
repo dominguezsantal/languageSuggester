@@ -18,7 +18,9 @@ $(document).ready(function() {
         if (personalityValue) {
             alert("Your personality type is:" + personalityValue);
         }
-
+        if (projectValue) {
+            alert("Your choice for your project is:" + "  " + projectValue);
+        }
 
 
         //$("label").toggle();

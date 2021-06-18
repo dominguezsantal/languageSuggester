@@ -9,12 +9,14 @@ $(document).ready(function() {
             alert("Your educational level is - " + educationValue);
         }
         if (problemValue) {
-            alert("Your approach to solving problems is " + problemValue);
+            alert("Your approach to solving problems is " + " " + problemValue);
         }
         if (learnValue) {
-            alert(" You learn the best by" + learnValue + "process");
+            alert(" You learn the best by" + " " + learnValue + " " + "process");
         }
-
+        if (personalityValue) {
+            alert("Your personality type is:" + personalityValue);
+        }
 
 
         //$("label").toggle();

@@ -9,15 +9,18 @@
 }*/
 
 body {
-    box-sizing: content-box;
-    /* default */
-    width: 100px;
-    height: 100px;
-    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
     border: 25px;
+    padding: 30px;
     /* padding % is a percentage of the element's width */
     /* Borders can't be set to percentages */
     background: white;
+}
+
+label {
+    display: block;
 }
 
 

@@ -3,6 +3,8 @@ $(document).ready(function() {
         var educationValue = $("input[name='education']:checked").val();
         var problemValue = $("input[name='problem']:checked").val();
         var learnValue = $("input[name='learn']:checked").val();
+        var personalityValue = $("input[name= 'personality']:checked").val();
+
         if (educationValue) {
             alert("Your educational level is - " + educationValue);
         }
@@ -12,6 +14,9 @@ $(document).ready(function() {
         if (learnValue) {
             alert(" You learn the best by" + learnValue + "process");
         }
+
+
+
         //$("label").toggle();
         //$("label").show();
 

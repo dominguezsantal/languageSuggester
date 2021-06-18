@@ -4,6 +4,7 @@ $(document).ready(function() {
         var problemValue = $("input[name='problem']:checked").val();
         var learnValue = $("input[name='learn']:checked").val();
         var personalityValue = $("input[name= 'personality']:checked").val();
+        var projectValue = $("input[name='projectChoice']:checked").val();
 
         if (educationValue) {
             alert("Your educational level is - " + educationValue);
@@ -17,6 +18,7 @@ $(document).ready(function() {
         if (personalityValue) {
             alert("Your personality type is:" + personalityValue);
         }
+
 
 
         //$("label").toggle();

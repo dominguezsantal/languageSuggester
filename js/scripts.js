@@ -6,9 +6,24 @@ $(document).ready(function() {
         const question4 = $("input[name= 'personality']:checked").val();
         const question5 = $("input[name='projectChoice']:checked").val();
 
-        if (question1) {
-            alert("Your educational level is - " + question1);
+        if (question1 === "ms") {
+            css += 5;
+            js += 5;
+        } else if (question1 === "hs") {
+            python += 5;
+        } else if (question1 === "college") {
+            php += 5;
+        } else {
+            alert("You didn't answer the question");
         }
+
+
+
+
+
+        //if (question1) {
+        // alert("Your educational level is - " + question1);
+        // }
         //if (question2) {
         // alert("Your approach to solving problems is " + " " + question2);
         //}
@@ -47,6 +62,7 @@ $(document).ready(function() {
                 $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is js</li>`);
             }
         }
+
 
         $("form#survey").hide();
         $("#results").show();

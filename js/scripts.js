@@ -29,7 +29,18 @@ $(document).ready(function() {
         } else {
             alert("You didn't answer the question");
         }
-
+        //question 3
+        if (question3 === "visual") {
+            css += 4;
+        } else if (question3 === "kinestetic") {
+            js += 4;
+        } else if (question2 === "read") {
+            python += 4;
+        } else if (question2 === "test") {
+            php += 4;
+        } else {
+            alert("You didn't answer the question");
+        }
 
 
 

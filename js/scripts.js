@@ -22,6 +22,7 @@ $(document).ready(function() {
         // alert("Your choice for your project is:" + "  " + question5);
         //}
 
+        //coding language logic
 
         let css = parseInt(0)
         let python = parseInt(0)

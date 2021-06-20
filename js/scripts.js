@@ -21,6 +21,31 @@ $(document).ready(function() {
         //if (question5) {
         // alert("Your choice for your project is:" + "  " + question5);
         //}
+
+
+        let css = parseInt(0)
+        let python = parseInt(0)
+        let ruby = parseInt(0)
+        let php = parseInt(0)
+        let js = parseInt(0)
+
+        let languages = [css, python, ruby, php, js]
+        languages.sort((a, b) => b - a);
+
+        for (let i = 0; i < 5; i += 1) {
+            if (languages[i] === css) {
+                $("#lanChoice").append(`<li>Based on your answer, your coding language is#${i + 1} is css</li>`);
+            } else if (languages[i] === python) {
+                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is python</li>`)
+            } else if (languages[i] === ruby) {
+                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is ruby</li>`);
+            } else if (languages[i] === php) {
+                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is php</li>`);
+            } else if (languages[i] === js) {
+                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is js</li>`);
+            }
+        }
+
         $("form#survey").hide();
         $("#results").show();
         event.preventDefault();

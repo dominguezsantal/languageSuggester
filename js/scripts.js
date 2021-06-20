@@ -23,7 +23,8 @@ $(document).ready(function() {
         //}
 
         //coding language logic
-
+        //used the sort method to re-arrange the languages stated in my language array.
+        //also used the parseInt function to convert my variables into int as functionality of simplyfing the users's language choice from string to int in my for loop function.  
         let css = parseInt(0)
         let python = parseInt(0)
         let ruby = parseInt(0)

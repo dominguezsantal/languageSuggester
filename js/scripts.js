@@ -1,99 +1,103 @@
 $(document).ready(function() {
     $("form#survey").submit(function(event) {
-        const question1 = $("input[name='education']:checked").val();
-        const question2 = $("input[name='problem']:checked").val();
-        const question3 = $("input[name='learn']:checked").val();
-        const question4 = $("input[name= 'personality']:checked").val();
-        const question5 = $("input[name='projectChoice']:checked").val();
+
+        const question1 = $("input:radio[name='education']:checked").val();
+        const question2 = $("input:radio[name='problem']:checked").val();
+        const question3 = $("input:radio[name='learn']:checked").val();
+        const question4 = $("input:radio[name= 'personality']:checked").val();
+        const question5 = $("input:radio[name='projectChoice']:checked").val();
+
+        let javaScript = parseInt(0);
+        let css = parseInt(0);
+        let python = parseInt(0);
+        let php = (parseInt(0))
+
 
         if (question1 === "ms") {
-            css += 5;
-            js += 5;
+            alert("css");
         } else if (question1 === "hs") {
-            python += 5;
+            alert("javaScript");
         } else if (question1 === "college") {
-            php += 5;
+            alert("php");
         } else {
-            alert("You didn't answer the question");
+            alert("Answer the question please!");
         }
 
-        //question 2
+
         if (question2 === "research") {
-            js += 3;
+            alert("javaScript");
         } else if (question2 === "identifyProblem") {
-            python += 3;
+            alert("php");
         } else if (question2 === "visualize") {
-            css += 3;
+            alert("css");
         } else if (question2 === "test") {
-            php += 3;
+            alert("python");
         } else {
-            alert("You didn't answer the question");
+            alert("Answer the question please!");
         }
-        //question 3
+
         if (question3 === "visual") {
-            css += 4;
+            alert("css");
         } else if (question3 === "kinestetic") {
-            js += 4;
+            alert("javaScript");
         } else if (question2 === "read") {
-            python += 4;
-        } else if (question2 === "test") {
-            php += 4;
+            alert("php");
+        } else if (question2 === "aural") {
+            alert("python");
         } else {
-            alert("You didn't answer the question");
+            alert("Answer the question please!");
+        }
+
+        if (question4 === "creative") {
+            alert("css");
+        } else if (question3 === "logic") {
+            alert("php");
+        } else if (question2 === "leader") {
+            alert("python");
+        } else if (question2 === "handsOn") {
+            alert("javaScript");
+        } else {
+            alert("Answer the question please!");
+        }
+
+        if (question5 === "gameSite") {
+            alert("css");
+        } else if (question3 === "movieSite") {
+            alert("javaScript");
+        } else if (question2 === "ispSite") {
+            alert("php");
+        } else if (question2 === "textSite") {
+            alert("python");
+        } else {
+            alert("Answer the question please!");
         }
 
 
 
 
 
-        //if (question1) {
-        // alert("Your educational level is - " + question1);
-        // }
-        //if (question2) {
-        // alert("Your approach to solving problems is " + " " + question2);
-        //}
-        //if (question3) {
-        //alert(" You learn the best by" + " " + question3 + " " + "process");
-        //}
-        //if (question4) {
-        // alert("Your personality type is:" + question4);
-        //}
-        //if (question5) {
-        // alert("Your choice for your project is:" + "  " + question5);
-        //}
 
-        //coding language logic
-        //used the sort method to re-arrange the languages stated in my language array.
-        //also used the parseInt function to convert my variables into int as functionality of simplyfing the users's language choice from string to int in my for loop function.  
-        let css = parseInt(0)
-        let python = parseInt(0)
-        let ruby = parseInt(0)
-        let php = parseInt(0)
-        let js = parseInt(0)
 
-        let languages = [css, python, ruby, php, js]
-        languages.sort((a, b) => b - a);
 
-        for (let i = 0; i < 5; i += 1) {
-            if (languages[i] === css) {
-                $("#lanChoice").append(`<li>Based on your answer, your coding language is#${i + 1} is css</li>`);
-            } else if (languages[i] === python) {
-                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is python</li>`)
-            } else if (languages[i] === ruby) {
-                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is ruby</li>`);
-            } else if (languages[i] === php) {
-                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is php</li>`);
-            } else if (languages[i] === js) {
-                $("#lanChoice").append(`<li>Based on your answer, your coding language is #${i + 1} is js</li>`);
-            }
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         $("form#survey").hide();
-        $("#results").show();
+        $("#answer").show();
+
         event.preventDefault();
 
-
     });
-
 });

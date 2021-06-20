@@ -17,6 +17,20 @@ $(document).ready(function() {
             alert("You didn't answer the question");
         }
 
+        //question 2
+        if (question2 === "research") {
+            js += 3;
+        } else if (question2 === "identifyProblem") {
+            python += 3;
+        } else if (question2 === "visualize") {
+            css += 3;
+        } else if (question2 === "test") {
+            php += 3;
+        } else {
+            alert("You didn't answer the question");
+        }
+
+
 
 
 

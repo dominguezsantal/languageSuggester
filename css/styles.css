@@ -1,4 +1,10 @@
 img {
+    /*This makes the images the same size*/
+    float: center;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    margin: 10px 10px 10px 10px;
     display: none;
 }
 

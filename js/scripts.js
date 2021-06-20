@@ -2,6 +2,8 @@ $(document).ready(function() {
     $("form#survey").submit(function(event) {
         $("form#survey").hide();
         $("results").show();
+        $("img").fadeOut(1000);
+        $("img").fadeIn(1000);
         $("img").show();
 
         event.preventDefault();

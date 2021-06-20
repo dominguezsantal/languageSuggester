@@ -1,103 +1,94 @@
 $(document).ready(function() {
     $("form#survey").submit(function(event) {
+        $("form#survey").hide();
+        $("results").show();
+        event.preventDefault();
 
         const question1 = $("input:radio[name='education']:checked").val();
-        const question2 = $("input:radio[name='problem']:checked").val();
-        const question3 = $("input:radio[name='learn']:checked").val();
-        const question4 = $("input:radio[name= 'personality']:checked").val();
-        const question5 = $("input:radio[name='projectChoice']:checked").val();
+        const question3 = $("input:radio[name='problem']:checked").val();
+        const question4 = $("input:radio[name='learn']:checked").val();
+        const question5 = $("input:radio[name= 'personality']:checked").val();
 
         let javaScript = parseInt(0);
         let css = parseInt(0);
         let python = parseInt(0);
-        let php = (parseInt(0))
+        let php = parseInt(0);
 
+        let language = [css, javaScript, php, python]
+        language.sort((a, b) => b - a);
+
+        for (let i = 0; i < 5; i += 1) {
+            if (language[i] === css) {
+                $("ul#lanChoice").append(`<li>First recommendation #${i + 1} is CSS </li>`);
+            } else if (language[i] === javaScript) {
+                $("ul#lanChoice").append(`<li>Second recommendation #${i + 1} is JS </li>`);
+            } else if (language[i] === php) {
+                $("ul#lanChoice").append(`<li>Third recommendation #${i + 1} is php </li>`);
+            } else if (language[i] === python) {
+                $("ul#lanChoice").append(`<li>Fourth recommendation #${i + 1} is python </li>`);
+            }
+        }
 
         if (question1 === "ms") {
-            alert("css");
+            css += 5;
         } else if (question1 === "hs") {
-            alert("javaScript");
+            javaScript += 5;
         } else if (question1 === "college") {
-            alert("php");
+            php += 5;
         } else {
             alert("Answer the question please!");
         }
 
 
         if (question2 === "research") {
-            alert("javaScript");
+            javaScript += 4;
         } else if (question2 === "identifyProblem") {
-            alert("php");
+            php += 4;
         } else if (question2 === "visualize") {
-            alert("css");
+            css += 4;
         } else if (question2 === "test") {
-            alert("python");
+            python += 4;
         } else {
             alert("Answer the question please!");
         }
 
         if (question3 === "visual") {
-            alert("css");
+            css += 3;
         } else if (question3 === "kinestetic") {
-            alert("javaScript");
-        } else if (question2 === "read") {
-            alert("php");
-        } else if (question2 === "aural") {
-            alert("python");
+            javaScript += 3;
+        } else if (question3 === "read") {
+            php += 3;
+        } else if (question3 === "aural") {
+            python += 3;
         } else {
             alert("Answer the question please!");
         }
 
         if (question4 === "creative") {
-            alert("css");
-        } else if (question3 === "logic") {
-            alert("php");
-        } else if (question2 === "leader") {
-            alert("python");
-        } else if (question2 === "handsOn") {
-            alert("javaScript");
+            css += 2;
+        } else if (question4 === "logic") {
+            php += 2;
+        } else if (question4 === "leader") {
+            python += 2;
+        } else if (question4 === "handsOn") {
+            javaScript += 2;
         } else {
             alert("Answer the question please!");
         }
 
         if (question5 === "gameSite") {
-            alert("css");
-        } else if (question3 === "movieSite") {
-            alert("javaScript");
-        } else if (question2 === "ispSite") {
-            alert("php");
-        } else if (question2 === "textSite") {
-            alert("python");
+            css += 1;
+        } else if (question5 === "movieSite") {
+            javaScript += 1;
+        } else if (question5 === "ispSite") {
+            php += 1;
+        } else if (question5 === "textSite") {
+            python += 1;
         } else {
             alert("Answer the question please!");
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        $("form#survey").hide();
-        $("#answer").show();
-
-        event.preventDefault();
 
     });
 });

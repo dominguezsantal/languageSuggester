@@ -9,10 +9,10 @@ $(document).ready(function() {
         event.preventDefault();
         //radio buttons value
         const question1 = $("input:radio[name='education']:checked").val();
-        const question3 = $("input:radio[name='problem']:checked").val();
-        const question4 = $("input:radio[name='learn']:checked").val();
-        const question5 = $("input:radio[name= 'personality']:checked").val();
-
+        const question2 = $("input:radio[name='problem']:checked").val();
+        const question3 = $("input:radio[name='learn']:checked").val();
+        const question4 = $("input:radio[name= 'personality']:checked").val();
+        const question5 = $("input:radio[name= 'projectChoice']:checked").val();
         //functionality of making language array from string to int
         let javaScript = parseInt(0);
         let css = parseInt(0);

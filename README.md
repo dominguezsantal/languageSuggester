@@ -1,11 +1,11 @@
-# Golblum's Coding Language Survey
+# Goldblum's Coding Language Survey
 
 #### Website, 2021
 
 #### By :Alex G.Dominguez
 
 ## Description
-* _This repo will allow you to: take a five question survey which the survey will match your personality, learning habits and problem solving skills to the programming language and even see a picture of Jeff Golblum encouraging you to learn your match langauge. On CSS, Jquery 3.6.0, Boostrap and HTML. Repository includes JQuery 3.6.0.js and Bootstrap files, so netiher JQuery nor Boostrapneeds to be installed locally in the users computer prior to clone or download the repository.  
+* _This repo will allow you to: take a five question survey which the survey will match your personality, learning habits and problem solving skills to the programming language and even see a picture of Jeff Goldblum encouraging you to learn your match langauge. On CSS, Jquery 3.6.0, Boostrap and HTML. Repository includes JQuery 3.6.0.js and Bootstrap files, so netiher JQuery nor Boostrap needs to be installed locally in the users computer prior to clone or download the repository.  
 
 
 ## Setup/Installation Requirements

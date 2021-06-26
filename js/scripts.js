@@ -62,7 +62,7 @@ $(document).ready(function() {
         $("form#survey").hide();
         $("results").show();
         $("img").fadeOut(1000);
-        $("img#" + chosenLanguage).fadeIn(1000);
+        $("img#javaScript" + chosenLanguage).fadeIn(1000);
         $("img#" + chosenLanguage).show();
     });
 });

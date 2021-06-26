@@ -13,7 +13,9 @@ $(document).ready(function() {
         let css = parseInt(0);
         let python = parseInt(0);
         let php = parseInt(0);
-        //functionality of each question matching each it's individual value with language
+
+        //Created a questionArray for all questions
+        //One for loop/if else for sorting each question and uphold to val type.  
         questionArray = [question1, question2, question3, question4, question5]
 
         questionArray.forEach(function(question) {
@@ -58,11 +60,10 @@ $(document).ready(function() {
             }
         }
 
-
         $("form#survey").hide();
         $("results").show();
         $("img").fadeOut(1000);
-        $("img#javaScript" + chosenLanguage).fadeIn(1000);
+        $("img#" + chosenLanguage).fadeIn(1000);
         $("img#" + chosenLanguage).show();
     });
 });

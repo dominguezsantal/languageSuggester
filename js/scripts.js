@@ -13,94 +13,29 @@ $(document).ready(function() {
         let css = parseInt(0);
         let python = parseInt(0);
         let php = parseInt(0);
-
         //functionality of each question matching each it's individual value with language
+        questionArray = [question1, question2, question3, question4, question5]
 
-        if (question1, question2, question2, question3, question4, question5) {
+        questionArray.forEach(function(question) {
+            let questionValue = ["val1", "val2", "val3", "val4"]
+            let value = parseInt(questionValue);
+
             for (value = 0; value <= 5; value += 1) {
-                let value = ["1", "2", "3", "4"]
-                let realValue = parseInt(value);
-
-                if (value === "1") {
-                    python += 5;
-                } else if (value === "2") {
-                    css += 5;
-                } else if (value === "3") {
+                if (question === "val1") {
                     javaScript += 5;
-                } else if (value === "4") {
+                } else if (question === "val2") {
+                    css += 5;
+                } else if (question === "val3") {
+                    python += 5;
+                } else if (question === "val4") {
                     php += 5;
                 } else {
                     alert("Answer the question please!");
                     return;
                 }
             }
-        }
 
-        //old code
-        //if (question1 === "elementary") {
-        //python += 5;
-        // } else if (question1 === "ms") {
-        // css += 5;
-        // } else if (question1 === "hs") {
-        // javaScript += 5;
-        // } else if (question1 === "college") {
-        // php += 5;
-        // } else {
-        //alert("Answer question #1 please!");
-        //return;
-        //}
-
-        //if (question2 === "research") {
-        // javaScript += 4;
-        // } else if (question2 === "identifyProblem") {
-        // php += 4;
-        //} else if (question2 === "visualize") {
-        //css += 4;
-        //} else if (question2 === "test") {
-        //python += 4;
-        //} else {
-        //alert("Answer question #2 please!");
-        //return;
-        //}
-
-        //if (question3 === "visual") {
-        //css += 3;
-        //} else if (question3 === "kinestetic") {
-        //javaScript += 3;
-        //} else if (question3 === "read") {
-        //php += 3;
-        //} else if (question3 === "aural") {
-        //python += 3;
-        //} else {
-        //alert("Answer question #3 please!");
-        //return;
-        //}
-
-        //if (question4 === "creative") {
-        //css += 2;
-        //} else if (question4 === "logic") {
-        //php += 2;
-        //} else if (question4 === "leader") {
-        //python += 2;
-        //} else if (question4 === "handsOn") {
-        //javaScript += 2;
-        //} else {
-        //alert("Answer question #4 please!");
-        //return;
-        //}
-
-        //if (question5 === "gameSite") {
-        //css += 1;
-        //} else if (question5 === "movieSite") {
-        //javaScript += 1;
-        //} else if (question5 === "ispSite") {
-        // php += 1;
-        // } else if (question5 === "textSite") {
-        //python += 1;
-        //} else {
-        //alert("Answer question #5 please!");
-        //return;
-        //}
+        })
 
         //language array and for loop
         let language = [css, javaScript, php, python]

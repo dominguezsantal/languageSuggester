@@ -1,3 +1,7 @@
+#javaScript {
+    display: none;
+}
+
 img {
     /*This makes the images the same size*/
     float: center;

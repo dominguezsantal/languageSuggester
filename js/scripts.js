@@ -15,6 +15,28 @@ $(document).ready(function() {
         let php = parseInt(0);
 
         //functionality of each question matching each it's individual value with language
+
+        if (question1, question2, question2, question3, question4, question5) {
+            for (value = 0; value <= 5; value += 1) {
+                let value = ["1", "2", "3", "4"]
+                let realValue = parseInt(value);
+
+                if (value === "1") {
+                    python += 5;
+                } else if (value === "2") {
+                    css += 5;
+                } else if (value === "3") {
+                    javaScript += 5;
+                } else if (value === "4") {
+                    php += 5;
+                } else {
+                    alert("Answer the question please!");
+                    return;
+                }
+            }
+        }
+
+        //old code
         //if (question1 === "elementary") {
         //python += 5;
         // } else if (question1 === "ms") {
@@ -100,6 +122,7 @@ $(document).ready(function() {
                 chosenLanguage = 'python';
             }
         }
+
 
         $("form#survey").hide();
         $("results").show();
